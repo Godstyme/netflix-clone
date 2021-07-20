@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+  --white: #fff;
+  --red: #E50914;
+  --gray: #222222;
+  --black: #000000;
+}
+main{
+  height: auto;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url(../imgs/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 10px solid var(--gray);
+  padding-bottom: 20px;
+}
+header{
+  width: 100%;
+  padding: 20px 60px;
+}
+ul.nav-link{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nfLogo .svg-icon-netflix-logo {  height: 36px; width: 134px; }
+.nfLogo .svg-icon-netflix-logo { padding-top: .5rem; }
+svg:not(:root) { overflow: hidden; }
+.nfLogo { fill: var(--red); line-height: normal; }
+
+#btn-signin{
+  font-size: 1.1em;
+  padding: 8px 20px;
+  background: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.banner-caption-container{
+  height: auto;
+  width: 55%;
+  padding: 10px 15px;
+  /* background: yellow; */
+  text-align: center;
+  color: var(--white);
+  margin: 100px auto;
+  text-align: center;
+}
+#banner-caption{
+  font-size: 3.5em;
+}
+#watch-direction{
+  font-size: 2em;
+  padding: 10px 2px;
+}
+#subscribe-newsletter{
+  font-size: 1.2em;
+  padding: 10px 2px;
+}
+#email-field{
+  padding: 15px;
+  width: 70%;
+  font-size: 1.2em;
+}
+.newletter-con{
+  padding: 10px 20px 2px 20px;
+  display: flex;
+}
+#btn-get-started{
+  padding: 10px;
+  width: 30%;
+  font-size: 1.5em;
+  background: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}
+#second-section,#third-section{
+  height: auto;
+  background: var(--black);
+  border-bottom: 10px solid var(--gray);
+  color: var(--white);
+  padding: 40px 10px;
+}
+#second-section > div, #third-section > div {
+  display: flex;
+  justify-content: space-around;
+}
+.first-column{
+  height: 400px;
+  width: 40%;
+  padding-top: 90px;
+}
+.first-column > p,#save {
+  font-size: 1.7em;
+}
+.img-tv{
+  height: 400px;
+  width: 100%;
+}
+.second-column{
+  height: 400px;
+  width: 40%;
+}
+#describe-show,#describe-download{
+  font-size: 3em;
+  padding-bottom: 10px;
+}
+.download{
+  padding-top: 90px;
+}
