@@ -55,7 +55,7 @@ svg:not(:root) { overflow: hidden; }
   text-align: center;
 }
 #banner-caption{
-  font-size: 3.5em;
+  font-size: 3.234rem;
 }
 #watch-direction{
   font-size: 2em;
