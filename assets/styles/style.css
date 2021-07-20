@@ -82,14 +82,14 @@ svg:not(:root) { overflow: hidden; }
   cursor: pointer;
   border: none;
 }
-#second-section,#third-section{
+#second-section,#third-section,.teens-section{
   height: auto;
   background: var(--black);
   border-bottom: 10px solid var(--gray);
   color: var(--white);
   padding: 40px 10px;
 }
-#second-section > div, #third-section > div {
+#second-section > div, #third-section > div, .teens-section > div{
   display: flex;
   justify-content: space-around;
 }
@@ -120,6 +120,10 @@ svg:not(:root) { overflow: hidden; }
   height: 400px;
   width: 80%;
   object-fit: cover;
+}
+.teens-holder{
+  width: 100%;
+  padding: 2px 20px;
 }
 #fourth-section{
   height: auto;
@@ -204,10 +208,30 @@ svg:not(:root) { overflow: hidden; }
   .img-mobile{
     object-fit: cover;
   }
+  .mibile-view{
+    height: 200px;
+    width: 200px;
+  }
   #fourth-section{
     padding: 40px 10px;
   }
   #fourth-section > div {
+    text-align: center;
     width: 100%;
+    padding: 0 30px;
+  }
+  .teens-section > div{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .mobile-right{
+    order: 1;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .mobile-left{
+    order: 2;
+    width: 100%;
+    padding-top: 0;
   }
 }
