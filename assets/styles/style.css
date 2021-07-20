@@ -117,3 +117,85 @@ svg:not(:root) { overflow: hidden; }
 .download{
   padding-top: 90px;
 }
+.img-mobile{
+  height: 400px;
+  width: 80%;
+}
+.mobile-holder{
+  /* background: red; */
+}
+#fourth-section{
+  height: 200px;
+  background: var(--black);
+  border-bottom: 10px solid var(--gray);
+  color: var(--white);
+  padding: 40px 10px;
+}
+
+
+
+
+
+
+/* ======================= media query in mobile phone ================= */
+@media screen and (max-width: 800px){ 
+  #btn-signin{
+    font-size: 0.8em;
+  }
+  .banner-caption-container{
+    width: 100%;
+    padding: 10px 40px;
+  }
+  #banner-caption{
+    font-size: 1.5em;
+  }
+  #watch-direction{
+    font-size: 1em;
+  }
+  #subscribe-newsletter{
+    font-size: 1em;
+  }
+  .newletter-con{
+    padding: 10px 10px 2px 10px;
+    display: block;
+  }
+  #email-field{
+    padding: 8px;
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  #btn-get-started{
+    padding: 10px;
+    width: 60%;
+    font-size: 1.2em;
+  }
+  #second-section > div, #third-section > div {
+    display: block;
+    text-align: center;
+  }
+  .first-column{
+    height: auto;
+    width: 100%;
+    padding: 20px 0 2px 0;
+  }
+  .first-column > p,#save {
+    font-size: 1em;
+  }
+  .img-tv{
+    height: 200px;
+    width: 80%;
+  }
+  .second-column{
+    height: auto;
+    width: 100%;
+    padding: 0px 0 2px 0;
+  }
+  #describe-show,#describe-download{
+    font-size: 1.4em;
+    padding-bottom: 10px;
+  }
+  .download{
+    padding-top: 90px;
+  }
+}
