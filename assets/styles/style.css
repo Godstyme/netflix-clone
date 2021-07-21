@@ -90,7 +90,7 @@ svg:not(:root) { overflow: hidden; }
   cursor: pointer;
   border: none;
 }
-#second-section,#third-section,.teens-section{
+#second-section,#third-section,.teens-section,#section-faq{
   height: auto;
   background: var(--black);
   border-bottom: 10px solid var(--gray);
@@ -107,7 +107,7 @@ svg:not(:root) { overflow: hidden; }
   padding-top: 90px;
 }
 .first-column > p,#save,.txt-stream {
-  font-size: 1.7em;
+  font-size: 1.4em;
 }
 .img-tv{
   height: 400px;
@@ -195,6 +195,39 @@ a.footer-a:hover{
 .downloading-icon{
   height: 50px;
 }
+#section-faq > h1 {
+  text-align: center;
+}
+ul#faq-ul{ width:70%; margin:0 auto;}
+li.faq-list{overflow: hidden; padding:10px 0px;background: #303030; margin-bottom: 8px;cursor: pointer;}
+li.faq-list h2{display: inline-block; font-size: 1.5em;}
+.list-caption{padding: 10px 40px;}
+li.faq-list button{float: right; font-size: 25px;}
+.cont{display: none;border-top: 2px solid var(--black);width: 100%;padding: 40px; font-size: 1.5em;}
+.inc{ 
+  display: block;
+  animation-duration: 2s;
+  animation-name: slide;
+}
+.plus,.times{background: inherit;color: var(--white);border: none;cursor: pointer;}
+.times{display: none;}
+.faq{
+  padding-bottom: 30px;
+}
+.faq-newletter{
+  width: 60%;
+  margin:0 auto;
+  padding: 60px 0px 5px 0px;
+  text-align: center;
+}
+@keyframes slide {
+  from {
+    background: red;
+  }
+  to {
+    background: khaki;
+  }
+}
 
 
 
@@ -226,7 +259,7 @@ a.footer-a:hover{
   #email-field{
     padding: 8px;
     width: 100%;
-    font-size: 1em;
+    font-size: .8em;
     margin-bottom: 10px;
   }
   #btn-get-started{
@@ -292,7 +325,7 @@ a.footer-a:hover{
     padding-top: 0;
   }
   .card-display{
-    height: 80px;
+    height: 60px;
     width: 80%;
     border: 1.8px solid #757575;
     border-radius: 8px;
@@ -320,4 +353,17 @@ a.footer-a:hover{
   .download{
     padding-top: 2px;
   }
+  .downloading-icon{
+    height: 40px;
+  }
+  ul#faq-ul{ width:100%;}
+li.faq-list{overflow: hidden; padding:4px 0px;}
+li.faq-list h2{ font-size: .8em;}
+.list-caption{padding: 5px 20px;}
+li.faq-list button{float: right; font-size: 20px;}
+.inc{ display: block;}
+.cont{display: none;border-top: 2px solid var(--black);width: 100%;padding: 40px; font-size: 1.5em;}
+.faq-newletter{
+  width: 80%;
+}
 }
