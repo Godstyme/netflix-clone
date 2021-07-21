@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'NetflixSansRegular','Helvetica Neue',Helvetica,Arial,sans-serif;
   user-select: none;
 }
 :root{
@@ -11,6 +11,13 @@
   --gray: #222222;
   --black: #000000;
 }
+@font-face {
+  font-family: "NetflixSansRegular";
+  src: url("NetflixSansRegular.eot");
+  src: url("NetflixSansRegular.ttf") format("ttf"),
+  url("NetflixSansRegular.otf") format("opentype"),
+  url("NetflixSansRegular.svg#filename") format("svg");
+  }
 main{
   height: auto;
   width: 100%;
@@ -136,7 +143,33 @@ svg:not(:root) { overflow: hidden; }
 #fourth-section > div {
   width: 55%;
 }
-
+footer{
+  height: auto;
+  width: 100%;
+  background: var(--black);
+  padding: 30px 120px;
+}
+footer > div {
+  display: grid;
+  grid-template-columns: repeat(4,20%);
+  column-gap: 30px;
+  justify-content: center;
+  padding-top: 20px;
+}
+#links-holder{
+  padding-top: 40px;
+}
+a {
+  text-decoration: none;
+  color: #757575;
+}
+a:hover{
+  text-decoration: underline;
+}
+.link{
+  padding-bottom: 15px;
+  display: block;
+}
 
 
 
@@ -152,7 +185,7 @@ svg:not(:root) { overflow: hidden; }
   }
   .banner-caption-container{
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 5px;
   }
   #banner-caption{
     font-size: 1.5em;
@@ -234,5 +267,13 @@ svg:not(:root) { overflow: hidden; }
     order: 2;
     width: 100%;
     padding-top: 0;
+  }
+  footer{
+    padding: 30px 10px;
+    font-size: 0.8em;
+  }
+  footer > div {
+    grid-template-columns: repeat(2,40%);
+    
   }
 }
