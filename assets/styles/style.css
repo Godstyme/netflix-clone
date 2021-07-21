@@ -159,19 +159,42 @@ footer > div {
 #links-holder{
   padding-top: 40px;
 }
-a {
+a.footer-a {
   text-decoration: none;
   color: #757575;
 }
-a:hover{
+a.footer-a:hover{
   text-decoration: underline;
 }
 .link{
   padding-bottom: 15px;
   display: block;
 }
-
-
+#downloading{
+  color: #0071EB;
+  text-decoration: none;
+}
+.card-display{
+  height: 100px;
+  width: 55%;
+  border: 2px solid #757575;
+  border-radius: 12px;
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: 20% 40% 30%;
+  align-items: center;
+  column-gap: 10px;
+  background: var(--black);
+  transform: translate(22%,-8em);
+}
+.card{
+  height: 80px;
+  width: 55px;
+  object-fit: cover;
+}
+.downloading-icon{
+  height: 50px;
+}
 
 
 
@@ -203,12 +226,12 @@ a:hover{
   #email-field{
     padding: 8px;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 10px;
   }
   #btn-get-started{
     padding: 10px;
-    width: 60%;
+    width: 50%;
     font-size: 1.2em;
   }
   #second-section > div, #third-section > div {
@@ -268,6 +291,20 @@ a:hover{
     width: 100%;
     padding-top: 0;
   }
+  .card-display{
+    height: 80px;
+    width: 80%;
+    border: 1.8px solid #757575;
+    border-radius: 8px;
+    padding: 8px 10px;
+    grid-template-columns: 10% 60% 25%;
+    column-gap: 8px;
+    transform: translate(16%,-4em);
+  }
+  .card{
+    height: 40px;
+    width: 30px;
+  }
   footer{
     padding: 30px 10px;
     font-size: 0.8em;
@@ -275,5 +312,12 @@ a:hover{
   footer > div {
     grid-template-columns: repeat(2,40%);
     
+  }
+  .mobil-holder{
+    height: 15em;
+    padding-bottom: 10px;
+  }
+  .download{
+    padding-top: 2px;
   }
 }
